@@ -1,51 +1,54 @@
 
 <html>
     <style>
-        body {
-            background-image: url('bg1.jpg');
+        body{
+            background-color: #181818;
         }
-        @font-face {
-            font-family: JFS;
-            src: url(JFS.ttf);
-        }
-
-        @font-face {
-            font-family: FM;
-            src: url(FM.ttf);
+        .btn{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            font-family:'sans serif','FM'
         }
 
-        h1{
+        .btn1{
+            color: #e4e4e4;
+            background-color: #d62323 ;
+        }
+
+        .btn2{
+            background-color: #e4e4e4;
+            color: #ba0000;
+        }
+        .btn3{
+            background-color: #323232;
+            color:#d62323;
+        }
+
+        .menu{
+            display: flex;
+
+        }
+        #outer
+        {
+            width:100%;
             text-align: center;
-            font-size: 7vh;
-            font-family: JFS;
-        }
-
-        form{
-            text-align: center;
+            display: flex;
             margin-top: 15%;
-            font-family: FM;
+            margin-bottom: 15%;
+            justify-content: center;
+        }
+        .inner
+        {
+            display: inline-block;
+        }   
 
-        }
-        ::placeholder{
-            font-family: FM;
-        }
-        input{
-            width: auto;
-            height:auto;
-            ;
-        }
-
-        button{
-            font-family: FM;
-            margin-top: 30px;
-        }
     </style>
 
-    <h1>Try-P</h1>
-    <form action="/Users/Admin/Desktop/programming/try=p/mainmenu.html" method="post">
-        <input type="text" placeholder="Enter your email" required><br>
-        <input type="password" placeholder="Enter your password" required><br>
-        <button type="submit">Log in</button>
-    </form>
-</html>
+    <div class="menu" id = "outer">
+        <button class="btn inner btn1" onclick="location.href='graph_creation.html'">create a new graph</button>
+        <button class="btn inner btn2" onclick="location.href='https://www.youtube.com/watch?v=8xQVT3XHaQk'"> I am for nothing, but design purposes</button>
+        <button class="btn inner btn3" onclick="location.href='dpgraphs.html'"> View your created graphs</button>
+    </div>
+    
 </html>
