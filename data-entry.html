@@ -1,0 +1,46 @@
+<html>
+    <style>
+        .column{
+            float: left;
+            border: 1;
+            height: max-content;
+        }
+
+        .left{
+            width: 20%;
+            background-color: #d62323;
+            height: 100%;
+        }
+        .right{
+            width: 80%;
+            background-color: #e4e4e4;
+            height: 100%;
+            text-align: center;
+        }
+
+        p{
+            font-family:'Courier New';
+        }
+
+        h1{
+            font-family: JSF;
+        }
+    </style>
+
+    <div class="column left">
+        random text goes here
+    </div>
+
+    <div class="column right">
+        <h1>Would you kindly enter your data?</h1><br>
+        <form>
+            <p id="xvar">X variable name here</p><br>
+            <input type="number" id ="xval" name="xval">
+            <p id="yvar"> Y variable name here</p><br>
+            <input type="number" id ="yval" name="yval">
+            <button type="submit">Enter the data</button>
+
+
+        </form>
+    </div>
+</html>
