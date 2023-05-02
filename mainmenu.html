@@ -1,56 +1,51 @@
 
- 
-
 <html>
     <style>
-        body{
-            background-color: #181818;
+        body {
+            background-image: url('bg1.jpg');
         }
-        .btn{
-            height: 200px;
-            width: 200px;
-            border-radius: 50%;
-            font-family:'sans serif','FM'
+        @font-face {
+            font-family: JFS;
+            src: url(JFS.ttf);
         }
 
-        .btn1{
-            color: #e4e4e4;
-            background-color: #d62323 ;
+        @font-face {
+            font-family: FM;
+            src: url(FM.ttf);
         }
 
-        .btn2{
-            background-color: #e4e4e4;
-            color: #ba0000;
-        }
-        .btn3{
-            background-color: #323232;
-            color:#d62323;
-        }
-
-        .menu{
-            display: flex;
-
-        }
-        #outer
-        {
-            width:100%;
+        h1{
             text-align: center;
-            display: flex;
-            margin-top: 30%;
-            margin-bottom: 40%;
-            justify-content: center;
+            font-size: 7vh;
+            font-family: JFS;
         }
-        .inner
-        {
-            display: inline-block;
-        }   
 
+        form{
+            text-align: center;
+            margin-top: 15%;
+            font-family: FM;
+
+        }
+        ::placeholder{
+            font-family: FM;
+        }
+        input{
+            width: auto;
+            height:auto;
+            ;
+        }
+
+        button{
+            font-family: FM;
+            margin-top: 30px;
+        }
     </style>
 
-    <div class="menu" id = "outer">
-        <button class="btn inner btn1">create a new graph</button>
-        <button class="btn inner btn2"> I am for nothing, but design purposes</button>
-        <button class="btn inner btn3"> View your created graphs</button>
-    </div>
-    
+    <h1>Try-P</h1>
+    <form action="/Users/Admin/Desktop/programming/try=p/mainmenu.html" method="post">
+        <input type="text" placeholder="Enter your email" required><br>
+        <input type="password" placeholder="Enter your password" required><br>
+        <button type="submit">Log in</button>
+    </form>
+</html>
 </html>
